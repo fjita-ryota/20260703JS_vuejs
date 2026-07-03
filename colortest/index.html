@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>ポケモン図鑑</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>ポケモン図鑑</h1>
+
+  <p class="animal">{{ emoji }}</p>
+
+  <h2>{{ name }}</h2>
+
+  <p>{{ description }}</p>
+
+  <button @click="showPokemon('fushigidane')">フシギダネ</button>
+  <button @click="showPokemon('hitokage')">ヒトカゲ</button>
+  <button @click="showPokemon('zenigame')">ゼニガメ</button>
+  <button @click="showPokemon('pikachu')">ピカチュウ</button>
+  <button @click="showPokemon('eevee')">イーブイ</button>
+  <button @click="showPokemon('snorlax')">カビゴン</button>
+  <button @click="showPokemon('gengar')">ゲンガー</button>
+  <button @click="showPokemon('lapras')">ラプラス</button>
+  <button @click="showPokemon('mew')">ミュウ</button>
+
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
